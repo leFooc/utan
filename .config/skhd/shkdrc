@@ -1,0 +1,50 @@
+# change window focus
+cmd - up 		: yabai -m window --focus north
+cmd - right 		: yabai -m window --focus east
+cmd - down 		: yabai -m window --focus south
+cmd - left 		: yabai -m window --focus west
+
+ctrl - 1		: yabai -m space --focus 1
+ctrl - 2		: yabai -m space --focus 2
+ctrl - 3 		: yabai -m space --focus 3
+ctrl - 4 		: yabai -m space --focus 4
+ctrl - 5 		: yabai -m space --focus 5
+# for large keyboard
+ctrl - 0x53		: yabai -m space --focus 1 # right 1
+ctrl - 0x54		: yabai -m space --focus 2 # right 2
+ctrl - 0x55		: yabai -m space --focus 3 # right 3
+ctrl - 0x56		: yabai -m space --focus 4 # right 4
+ctrl - 0x57		: yabai -m space --focus 5 # right 5
+
+# swap focus
+cmd + ctrl - up		: yabai -m window --swap north
+cmd + ctrl - right 	: yabai -m window --swap east
+cmd + ctrl - down 	: yabai -m window --swap south
+cmd + ctrl - left 	: yabai -m window --swao west
+
+cmd + ctrl - 1		: yabai -m window --space 1 && yabai -m space --focus 1
+cmd + ctrl - 2		: yabai -m window --space 2 && yabai -m space --focus 2
+cmd + ctrl - 3		: yabai -m window --space 3 && yabai -m space --focus 3
+cmd + ctrl - 4		: yabai -m window --space 4 && yabai -m space --focus 4
+cmd + ctrl - 5		: yabai -m window --space 5 && yabai -m space --focus 5
+# for large keyboard
+cmd + ctrl - 0x53	: yabai -m window --space 1 && yabai -m space --focus 1 # right 1
+cmd + ctrl - 0x54	: yabai -m window --space 2 && yabai -m space --focus 2 # right 2
+cmd + ctrl - 0x55	: yabai -m window --space 3 && yabai -m space --focus 3 # right 3
+cmd + ctrl - 0x56	: yabai -m window --space 4 && yabai -m space --focus 4 # right 4
+cmd + ctrl - 0x57	: yabai -m window --space 5 && yabai -m space --focus 5 # right 5
+
+# rotate
+ctrl + cmd - x   	: yabai -m space --mirror x-axis
+ctrl + cmd - y   	: yabai -m space --mirror y-axis
+ctrl - f 		: yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# resize
+ctrl - m 		: yabai -m window --toggle zoom-fullscreen
+ctrl - e                : yabai -m space --balance
+
+# shortcut
+ctrl + cmd - c          : open -a "Visual Studio Code"
+ctrl + cmd - b       	: open -a "Brave Browser"
+ctrl + cmd - g         	: open -a "Google Chrome"
+
