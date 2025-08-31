@@ -1,0 +1,33 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# bsp, if space >= 5 then float
+yabai -m config layout bsp
+yabai -m config --space 5 layout float
+yabai -m config --space 6 layout float
+yabai -m config --space 7 layout float
+yabai -m config --space 8 layout float
+yabai -m config --space 9 layout float
+yabai -m config --space 10 layout float
+
+yabai -m config window_placement second_child
+
+# padding
+yabai -m config top_padding 8
+yabai -m config bottom_padding 8
+yabai -m config left_padding 8
+yabai -m config right_padding 8
+yabai -m config window_gap 8
+
+# mouse setting
+yabai -m config mouse_modifier cmd
+yabai -m config mouse_follows_focus off
+yabai -m config mouse_action1 move
+yabai -m config mouse_action2 resize
+
+yabai -m mouse_drop_action swap
+
+# ignore apps
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^System Preferences" manage=off
+yabai -m rule --add app="^Finder$" manage=off
