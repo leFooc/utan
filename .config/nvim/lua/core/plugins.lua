@@ -23,7 +23,10 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
 
   -- Github Copilot
-  use 'github/copilot.nvim'
+  use {
+    'github/copilot.vim',
+    branch = 'release'
+  }
 
   -- Auto pairs
   use 'jiangmiao/auto-pairs'
@@ -41,8 +44,8 @@ return require('packer').startup(function(use)
       vim.g.tokyonight_styles = {
         comments = { italic = true },
         keywords = { italic = true },
-        functions = { }
-        variables = { }
+        functions = { },
+        variables = { },
         sidebars = "transparent"
       }
 
