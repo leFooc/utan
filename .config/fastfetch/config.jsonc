@@ -1,0 +1,85 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "arch2",
+    "padding": {
+      "top": 1,
+      "bottom": 1,
+      "left": 2
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "os",
+      "keyColor": "#94d2bd"
+    },
+    {
+      "type": "kernel",
+      "key": "├  Kernel",
+      "keyColor": "#94d2bd"
+    },
+    {
+      "type": "packages",
+      "key": "├  Packages",
+      "keyColor": "#94d2bd"
+    },
+        {
+      "type": "terminal",
+      "key": "├  Terminal",
+      "keyColor": "#94d2bd"
+    },
+    {
+      "type": "shell",
+      "key": "├  Shell",
+      "keyColor": "#94d2bd"
+    },
+    {
+      "type": "uptime",
+      "key": "└⏱  Uptime",
+      "keyColor": "#94d2bd"
+    },
+    "break",
+    {
+      "type": "host",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "cpu",
+      "key": "├  CPU",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "gpu",
+      "key": "├  GPU",
+      "keyColor": "cyan"
+    },
+    {"type": "memory",
+      "key": "├  Ram",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "swap",
+      "key": "├  Swap",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "disk",
+      "key": "└  Disk",
+      "keyColor": "cyan"
+    },
+    "break",
+    {
+      "type": "datetime",
+      "key": "   Date",
+      "keyColor": "blue"
+    },
+    "break",
+    {
+      "type": "colors",
+      "paddingRight": 2,
+      "symbol": "circle"
+    },
+    "break"
+  ]
+}

@@ -31,6 +31,30 @@ return require('packer').startup(function(use)
   -- Auto pairs
   use 'jiangmiao/auto-pairs'
 
+  -- Lsp
+  use ({
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+    -- For ease of installing LSP servers
+    'neovim/nvim-lspconfig',
+  })
+
+  -- Completion & sources
+  use ({
+    'hrsh7th/nvim-cmp',         -- Completion plugin
+    'hrsh7th/cmp-nvim-lsp',     -- LSP source for nvim-cmp
+    'hrsh7th/cmp-buffer',       -- Buffer source for nvim-cmp
+    'hrsh7th/cmp-path',         -- Path source for nvim-cmp
+    'hrsh7th/cmp-cmdline',      -- Cmdline source for nvim-cmp
+    'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
+    'L3MON4D3/LuaSnip',         -- Snippets plugin
+    'onsails/lspkind-nvim',     -- vscode-like pictograms
+  })
+
+  -- eslint && prettier
+  use "mfussenegger/nvim-lint"
+  use "stevearc/conform.nvim"
+
   -- Tokyo night
   use {
     "folke/tokyonight.nvim",
@@ -59,7 +83,6 @@ return require('packer').startup(function(use)
 
     end
   }
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
